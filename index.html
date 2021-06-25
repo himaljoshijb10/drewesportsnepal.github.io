@@ -1,0 +1,190 @@
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DREW Esports</title>
+        <link rel="stylesheet" href="WEBPAGEday2.css">
+    </head>
+    <body>
+        <header>
+        <div id="container">
+            <nav>
+                <div>
+                    <div class="nav-bar-header">
+                        <a class="navbar-brand" herf="#">DREW Esports</a>
+                
+                    </div>
+                    <div class="search-box button">
+                        <input type="text" name="search" placeholder="....SEARCH....">
+                        <button value="Search" type="submit">Search</button>
+                    </div>
+                </div>
+
+                <div class="menu-container">
+                    <ul>
+
+                        <li class="current"><a href="home.html">Home</a></li>
+                        <li ><a href="players.html">Players</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h2 class="logotype">DREW-Esports</h2>
+        </div>
+    </section>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="./PUBG.png" style="width:100%">
+        <div class="text">Shine With Us. We are the One. (NEVER SAY NEVER)</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="./PUBG3.png" style="width:100%">
+        <div class="text">We will be best in the Universe.</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+        <section id="box_with_div">
+            <div class="container">
+                <h2 align="center">ABOUT US</h2>
+                <div class="box">
+                    <img src="./PUBG2.png">
+                    <h1>Main LineUp</h1>
+                    <p>Currently working on Projects. We only have two permanent players in main lineup. They are DREW x Justin and DREW x Meteor. They are only official players of DREW.</p>
+                 </div>
+                 <div class="box">
+                    <img src="./Esports.png"> 
+                    <h1>Esports Carrer</h1>
+                    <p>Currently DREW is Underdog Crew. They are working in their skills and recruiting new players to start their Journey. In present, they are participating in ERC PUBG Tournament where DREW x Justin, DREW x Meteor, B5 x JeEmZy, fmX x NC and DREW x SAMIR. They have made their positions on final.</p>
+                  </div>
+                  <div class="box">
+                    <img src="./logoPUBG.png"> 
+                    <br>
+                    <br>
+                    <h1> Current Esports Game </h1>
+                    <p>DREW is only involve in PUBG till this date. Once they get lifted up. They will participate in others Esports games as well. Keep Supporting DREW which is gonna be best crew in NEPAL in future.</p>
+                  </div>
+            </div>
+        </section>
+        <section id="box-with-div">
+          <div class="box">
+            <img src="./PUBG2.png"> 
+            <h1> Second LineUP </h1>
+            <p>We have our Second LineUP squads. They are the best. We called them DREW juniors and name given is FT. Players are FT x DynoYT, FT x Hitler, FT x Horror, FT x Joshi. They are the best and they are just starting their journey to play competative.</p>
+          </div> 
+            <div class="box">
+            <img src="./players.png"> 
+            
+            <h1>Others Clan Members</h1>
+            <p>Currently Clan is more active than Previous. Many players are trying their best to be recruit in competative LineUp. There are altogether 37 members in DREW. and Clan is currently on Level 6. </p>
+          </div>
+            <div class="box">
+            <img src="./youtube.png"> 
+          
+            <h1> Youtube  </h1>
+            <p>We have just started the YouTube for showing gaming skills and many more. You can check out the videos and montage over there. Our channel name is Blitz Dyno.</p>
+          </div>
+        </section>
+        
+        <section id="footer">
+          <footer>
+            
+          
+          <div class="row">
+        
+            <div class="item">
+              <h1>Services  </h1>
+              <ul>
+                <li> <a href="web"> How to be good player? </a></li>
+                <li> <a href="web"> Montages</a></li>
+                <li> <a href="web"> Sensitivity Training</a></li>
+              </ul>
+            </div>
+        
+            <div class="item">
+              <h1> Social medias </h1>
+              <ul>
+                <li> <a href="web"> Facebook </a></li>
+                <li> <a href="web"> Instagram </a></li>
+                <li> <a href="web"> Twitter </a></li>
+              </ul>
+            </div>
+        
+            <div class="item">
+              <h1> Contact Us </h1>
+              <ul>
+                <li> <a href="web">  980000000000 </a></li>
+                <li> <a href="web"> drewesports1994@gmail.com </a></li>
+                <li> <a href="web"> Blitz Dyno </a></li>
+              </ul>
+            </div>
+            <div class="item">
+                <h1>Players Details</h1>
+                <ul>
+                  <li> <a href="web"> DREW x Justin</a></li>
+                  <li> <a href="web"> DREW x Meteor </a></li>
+                  <li> <a href="web"> FT x DynoYT </a></li>
+                </ul>
+              </div>
+              
+          
+            </div>
+          
+          
+            </footer>
+          </section>
+    
+    </body>
+</html>
